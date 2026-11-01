@@ -22,28 +22,62 @@ The main workflow includes:
 ## Repository structure
 
 ```text
-.
+aaaa/
+│
 ├── README.md
-└── functions/
-    ├── [filtering_function].py
-    ├── [catalog_preparation_function].py
-    ├── [fitting_function].py
-    ├── [results_processing_function].py
-    └── [visualization_function].py
+├── LICENSE
+├── CITATION.cff
+├── THIRD_PARTY_NOTICES.md
+├── requirements.txt
+├── environment.yml
+│
+├── notebooks/
+│   ├── 01_template_preparation.ipynb
+│   ├── 02_input.ipynb
+│   ├── 03_sed_fitting.ipynb
+│   └── 04_analysis.ipynb
+│
+├── functions
+│    ├── filter_templates.py
+│    ├── KL.py
+│    ├── input.py
+│    ├── fitter.py
+│    ├── reading.py
+│    ├── result_files.py
+│    └── plots_routine.py
+│
+├── docs/
+│    ├── CONVOLVE_GAIA.md
+│    └── MODEL_GRID_INFO.md
+│
+├── examples/
+│    ├── YSO.csv
+│    ├── Cool.csv
+│    └── MS.csv
+│
+└── results/
+    └── README.md
 ```
 
 The `functions/` directory contains the custom Python routines developed for this work.
+The `notebooks/` directory contains the Jupyter notebooks to implement the routine.
+The `docs/` directory contains the information to get the grid and convolve function.
+The `examples/` directory contains the three samples used in the paper.
+The `results/` directory contains the results used in the paper.
 
 ## Third-party software and model grids
 
 This project uses external scientific software and model grids, including:
 
 - `sedfitter`, developed and published by Thomas P. Robitaille and collaborators.
-- The YSO model grids presented by Richardson et al. (2024).
+- The updated model grids presented by Richardson et al. (2024).
+- Convolve.py function to add GAIA filters in `sedfitter`, develop by Richardson T.
 
 The original source code and model grids from these third-party projects are not redistributed in this repository.
 
 The filtered model grids used in the analysis are generated locally from the original publicly available grids using the filtering routine included in this repository.
+
+References for these works are described in `THIRD_PARTY_NOTICES` file.
 
 ## Reproducibility
 
@@ -53,10 +87,11 @@ To reproduce the analysis, users will need to:
 
 1. Install the required Python dependencies.
 2. Obtain the original Richardson et al. (2024) model grids from their official source.
-3. Apply the model-grid filtering procedure included in this repository.
-4. Prepare the input catalog.
-5. Run the SED fitting procedure.
-6. Process and analyze the resulting outputs.
+3. Convolve Gaia filters using Richardson et. al. (2024) convolution.py function (available with the model grids)
+4. Apply the model-grid filtering procedure included in this repository.
+5. Prepare the input catalog.
+6. Run the SED fitting procedure.
+7. Process and analyze the resulting outputs.
 
 Detailed installation and reproduction instructions will be provided in this repository.
 
@@ -64,7 +99,7 @@ Detailed installation and reproduction instructions will be provided in this rep
 
 If you use this code, please cite the associated scientific publication:
 
-> [Citation will be added after publication.]
+> Referencia al paper o metemos un DOI de zenodo? 
 
 Please also cite the original publications and software associated with the third-party tools and model grids used by this workflow.
 
