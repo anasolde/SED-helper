@@ -67,7 +67,7 @@ The complete workflow required to reproduce the results presented in the associa
 To reproduce the analysis, users will need to:
 
 1. Install the required Python dependencies.
-2. Obtain the original Richardson et al. (2024) model grids from their official source.
+2. Obtain the model grids from Zenodo.
 3. Apply the model-grid filtering procedure included in this repository and convolve Gaia filters.
 4. Prepare the input catalog.
 5. Run the SED fitting procedure.
@@ -80,7 +80,7 @@ Detailed installation and reproduction instructions will be provided in this rep
 
 If you use this code, please cite the associated scientific publication:
 
-> Referencia al paper o metemos un DOI de zenodo? 
+> Referencia al paper
 
 Please also cite the original publications and software associated with the third-party tools and model grids used by this workflow.
 
@@ -88,10 +88,9 @@ Please also cite the original publications and software associated with the thir
 
 This project uses external scientific software and model grids, including:
 
-- `sedfitter`, developed and published by Thomas P. Robitaille and collaborators.
+- `Sedfitter`, developed and published by Thomas P. Robitaille and collaborators.
 - The updated model grids presented by Richardson et al. (2024).
-- Convolve.py function to add GAIA filters in `sedfitter`, develop by Richardson T.
-
+- Extra functions included in Richardson et al. (2024) dataset. 
 The original source code and model grids from these third-party projects are not redistributed in this repository.
 
 The filtered model grids used in the analysis are generated locally from the original publicly available grids using the filtering routine included in this repository.
