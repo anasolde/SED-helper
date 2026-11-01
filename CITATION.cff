@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this workflow, please cite it as below."
+authors:
+- family-names: "YOUR_NAME_HERE"
+  given-names: "YOUR_NAME_HERE"
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+- family-names: "aaaaaa"
+  given-names: "aaaaaa"
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+title: "aaaa"
+version: 1.0.0
+doi: 
+date-released: 2026-11-01
+url: "https://github.com/anasolde/aaaa"
