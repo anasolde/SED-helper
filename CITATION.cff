@@ -1,11 +1,11 @@
 cff-version: 1.2.0
 message: "If you use this workflow, please cite it as below."
 authors:
-- family-names: "YOUR_NAME_HERE"
-  given-names: "YOUR_NAME_HERE"
+- family-names: "aaaaaaaaaa"
+  given-names: "aaaaaaaa"
   orcid: "https://orcid.org/0000-0000-0000-0000"
-- family-names: "aaaaaa"
-  given-names: "aaaaaa"
+- family-names: "eeeeeeeee"
+  given-names: "eeeeeeeee"
   orcid: "https://orcid.org/0000-0000-0000-0000"
 title: "aaaa"
 version: 1.0.0
