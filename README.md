@@ -1,4 +1,5 @@
 # aaaa
+### Under development
 
 Python workflow for reproducible spectral energy distribution (SED) fitting and analysis using [`sedfitter`](https://github.com/richardson-t/sedfitter).
 
@@ -32,13 +33,12 @@ aaaa/
 ├── environment.yml
 │
 ├── notebooks/
-│   ├── 01_template_preparation.ipynb
-│   ├── 02_input.ipynb
-│   ├── 03_sed_fitting.ipynb
+│   ├── 01_preparation.ipynb
+│   ├── 02_sed_fitting.ipynb
 │   └── 04_analysis.ipynb
 │
 ├── functions
-│    ├── filter_templates.py
+│    ├── filt.py
 │    ├── KL.py
 │    ├── input.py
 │    ├── fitter.py
@@ -47,7 +47,6 @@ aaaa/
 │    ├── plots_routine.py
 │    └── Packages/
 │        ├── Sedfitter_main.md
-│        ├── Convolve_gaia.md
 │        └── Template_grids.md
 │
 ├── examples/
