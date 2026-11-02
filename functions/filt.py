@@ -1,10 +1,11 @@
+import numpy as np
+import pandas as pd
 import os
 import shutil
 from astropy.io import fits
-import numpy as np
-import pandas as pd
 
-def filter_aboveMS(listInstruments, directories, tempe_lim, outDir)
+
+def filter_aboveMS(listInstruments, directories, tempe_lim, outDir):
 
     '''Filter and select only the templates above MS and with valid values of Teff (above user limit)
 
@@ -214,4 +215,30 @@ def filter_aboveMS(listInstruments, directories, tempe_lim, outDir)
     
        
        
-      
+
+def change_grid(original_zip, outDir):
+
+    '''Zip the original model grids, extract the new family model grids to the main 
+       directory and delete the new created folder
+
+       original_zip (str): Name of the zip where original Richardson grids will be
+       outDir (str): Name of the folder where new grids have been saved in filter_aboveMS
+    '''
+
+    with zipfile.ZipFile(original_zip, "w", zipfile.ZIP_DEFLATED) as zipf:
+        for fam in directories:
+    
+            for file in fam.rglob("*"):                               # Write a zip file
+                if file.is_file():
+                    zipf.write(file, file.relative_to('.'))
+
+            print(fam,' zipped.')
+    
+    
+    for new_fam in outDir.iterdir():                             # Move new grids to main directory
+        if new_fam.is_dir():
+            shutil.move(str(new_fam), str(new_fam.name))
+            
+        print(new_fam,' moved to directory.')
+            
+    shutil.rmtree(outDir)
