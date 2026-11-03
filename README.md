@@ -35,12 +35,12 @@ aaaa/
 ├── notebooks/
 │   ├── 01_preparation.ipynb
 │   ├── 02_sed_fitting.ipynb
-│   └── 04_analysis.ipynb
+│   └── 03_analysis.ipynb
 │
 ├── functions
 │    ├── filt.py
 │    ├── KL.py
-│    ├── input.py
+│    ├── input_file.py
 │    ├── fitter.py
 │    ├── reading.py
 │    ├── result_files.py
