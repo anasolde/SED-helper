@@ -1,24 +1,25 @@
-# aaaa
-### Under development
+# SED-helper
 
-Python workflow for reproducible spectral energy distribution (SED) fitting and analysis using [`sedfitter`](https://github.com/richardson-t/sedfitter).
+Helper scripts in a Python workflow for reproducible spectral energy distribution (SED) fitting and analysis using [`Sedfitter`](https://github.com/richardson-t/sedfitter), originally developed by Robitaille T. in 2017 and updated by Richardson T. in 2024. Please consult the `THIRD_PARTY_NOTICES` file for further information.
+
 
 ## Overview
 
 This repository contains the Python routines developed for the analysis presented in:
 
-> **referencia del paper**
+> Soldevilla, A. et al. 2026, pending
 
-The workflow is designed to facilitate the preparation of input data, the execution of SED fitting using `sedfitter`, and the subsequent processing, analysis, and visualization of the results.
+The workflow is designed to facilitate the preparation of input data, the execution of SED fitting using `sedfitter`, and the subsequent processing, analysis, and visualisation of the results.
 
 The main workflow includes:
 
-1. Preparation of input catalogs in the format required by `sedfitter`.
-2. Filtering of the Richardson et al. (2024) YSO model grids according to the methodology described in the associated paper.
-3. Configuration and execution of the SED fitting procedure.
-4. Collection and processing of the fitting outputs.
-5. Generation of structured result tables.
-6. Analysis and visualization of the resulting physical parameters.
+1. Filtering of the Richardson et al. (2024) YSO model grids according to the methodology described in the associated paper.
+2. Convolving Gaia filters.
+3. Preparation of input catalogues in the format required by `Sedfitter`.
+4. Configuration and execution of the SED fitting procedure.
+5. Collection and processing of the fitting outputs.
+6. Generation of structured result tables.
+7. Analysis and visualisation of the resulting physical parameters.
 
 ## Repository structure
 
@@ -30,7 +31,6 @@ aaaa/
 ├── CITATION.cff
 ├── THIRD_PARTY_NOTICES.md
 ├── requirements.txt
-├── environment.yml
 │
 ├── notebooks/
 │   ├── 01_preparation.ipynb
@@ -65,21 +65,20 @@ The complete workflow required to reproduce the results presented in the associa
 
 To reproduce the analysis, users will need to:
 
-1. Install the required Python dependencies.
-2. Obtain the model grids from Zenodo.
-3. Apply the model-grid filtering procedure included in this repository and convolve Gaia filters.
-4. Prepare the input catalog.
+1. Install the required Python dependencies (instructions in `functions/Package/Sedfitter_main`).
+2. Obtain the model grids from Zenodo (instructions in `functions/Package/Template_grids`).
+3. Apply the model-grid filtering procedure included in this repository and convolve with Gaia filters.
+4. Prepare the input catalogue.
 5. Run the SED fitting procedure.
-6. Process and analyze the resulting outputs.
+6. Process and analyse the resulting outputs.
 
-Detailed installation and reproduction instructions will be provided in this repository.
 
 
 ## Citation
 
 If you use this code, please cite the associated scientific publication:
 
-> Referencia al paper
+> Soldevilla, A. et al. 2026, pending
 
 Please also cite the original publications and software associated with the third-party tools and model grids used by this workflow.
 
@@ -94,7 +93,7 @@ The original source code and model grids from these third-party projects are not
 
 The filtered model grids used in the analysis are generated locally from the original publicly available grids using the filtering routine included in this repository.
 
-References for these works are described in `THIRD_PARTY_NOTICES` file.
+References for these works are described in the `THIRD_PARTY_NOTICES` file.
 
 ## License
 
