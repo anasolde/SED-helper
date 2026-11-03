@@ -1,6 +1,6 @@
 # SED-helper
 
-Helper scripts in a Python workflow for reproducible spectral energy distribution (SED) fitting and analysis using [`Sedfitter`](https://github.com/richardson-t/sedfitter), originally developed by Robitaille T. in 2017 and updated by Richardson T. in 2024. Please consult the `THIRD_PARTY_NOTICES` file for further information.
+Helper scripts in a Python workflow for reproducible spectral energy distribution (SED) fitting and analysis using [`Sedfitter`](https://github.com/richardson-t/sedfitter), originally developed by Robitaille T. in 2007 and updated by Richardson T. in 2024. Please consult the `THIRD_PARTY_NOTICES` file for further information.
 
 
 ## Overview
