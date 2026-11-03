@@ -1,14 +1,13 @@
 cff-version: 1.2.0
 message: "If you use this workflow, please cite it as below."
 authors:
-- family-names: "aaaaaaaaaa"
-  given-names: "aaaaaaaa"
-  orcid: "https://orcid.org/0000-0000-0000-0000"
-- family-names: "eeeeeeeee"
-  given-names: "eeeeeeeee"
-  orcid: "https://orcid.org/0000-0000-0000-0000"
-title: "aaaa"
+- family-names: "Soldevilla"
+  given-names: "Ana"
+  orcid: "https://orcid.org/0009-0005-9076-5094"
+- family-names: "González"
+  given-names: "Marta"
+  orcid: "https://orcid.org/0000-0002-6823-3869"
+title: "SED-helper"
 version: 1.0.0
-doi: 
 date-released: 2026-11-01
-url: "https://github.com/anasolde/aaaa"
+url: "https://github.com/anasolde/SED-helper"
