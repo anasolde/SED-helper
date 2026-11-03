@@ -9,7 +9,7 @@ This repository contains the Python routines developed for the analysis presente
 
 > Soldevilla, A. et al. 2026, pending
 
-The workflow is designed to facilitate the preparation of input data, the execution of SED fitting using `sedfitter`, and the subsequent processing, analysis, and visualisation of the results.
+The workflow is designed to facilitate the preparation of input data, the execution of SED fitting using `Sedfitter`, and the subsequent processing, analysis, and visualisation of the results.
 
 The main workflow includes:
 
@@ -24,7 +24,7 @@ The main workflow includes:
 ## Repository structure
 
 ```text
-aaaa/
+SED-helper/
 │
 ├── README.md
 ├── LICENSE
