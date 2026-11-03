@@ -7,6 +7,8 @@ authors:
 - family-names: "González"
   given-names: "Marta"
   orcid: "https://orcid.org/0000-0002-6823-3869"
+- family-names: "Orozco"
+  given-names: "Natali"
 title: "SED-helper"
 version: 1.0.0
 date-released: 2026-11-01
