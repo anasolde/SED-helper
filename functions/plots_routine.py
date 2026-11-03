@@ -16,7 +16,7 @@ def plot_sed(folder_out, fileout_name, good_models, source_name):
 
     '''Sedfitter plot sed routine: https://sedfitter.readthedocs.io/en/stable/api/sedfitter.plot.html#sedfitter.plot
 
-       folder_out (str): path of the directory with the outputs
+       folder_out (str): path of the directory with the result outputs
        fileout_name (str): path of the output file 
        good_models (str): path of the csv file with number of good models (from reading routine)
        source_name (str): Prefix of the source
@@ -59,10 +59,11 @@ def plot_sed(folder_out, fileout_name, good_models, source_name):
     
 
 
-def plot_one_source(source, family, Ngood)
+def plot_one_source(folder_out, source, family, Ngood):
 
     ''' Plot a single fit 
-    
+
+        folder_out (str): path of the directory with the result outputs
         source (int): Number of the source (as in the fit)
         family (str): Family of the fit
         Ngood (int): Number of good models to plot along the best (if only the best is desired, Ngood=1)
