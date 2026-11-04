@@ -100,3 +100,7 @@ References for these works are described in the `THIRD_PARTY_NOTICES` file.
 The custom Python code contained in this repository is distributed under the terms specified in the `LICENSE` file.
 
 Third-party software and model grids are subject to their respective licenses and terms of use.
+
+## Acknowledgments
+
+This work acknowledges funding from the Spanish Agencia Estatal de Investigación (MICIU/AEI/10.13039/501100011033) and FEDER, EU through project TACOS (PID2023-146635NA-I00).
